@@ -182,7 +182,7 @@ if st.button('Click here!'):
 
     st.info(f"The probability that you use LinkedIn is: {round (probs[0][1], 2)}")
 
-st.subheader("So, Did I win the bet?!")
+st.subheader("So, did I win the bet?!")
 st.text('Let me know what you think, email me at ama502@georgetown.edu!')
 st.text('Thank you for playing!')
 
