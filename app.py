@@ -186,11 +186,5 @@ st.subheader("So, Did I win the bet?!")
 st.text('Let me know what you think, email me at ama502@georgetown.edu!')
 st.text('Thank you for playing!')
 
-st.subheader("Want these skills? - Check out Georgetown McDonough School of Business!")
-video_file = open('GtownMSB.mp4', 'rb')
-video_bytes = video_file.read()
-
-st.video(video_bytes)
-
 st.image('viz.png', caption='I did it! | Architect: AAhmed')
 
