@@ -49,9 +49,9 @@ import altair as alt
 st.image('GTownCampus.jpeg', caption='Georgetown MSBA LinkedIn User Prediction App | Architect: AAhmed')
 
 
-st.title('Want to play a game?')
-st.subheader('I bet you I can predict if you are a Linkdin User or Not!')
-st.text('Tell me a few things about you and I will use my magic crystal ball to predict!')
+st.title('Let's play a game that uses machine learning?')
+st.subheader('I bet I can predict whether you are a Linkdin User or Not!')
+st.text('Tell me a few things about you and I will use my magic crystal ball to predict! I'll share how I did this at the end.')
 
 
 gender_answer = st.selectbox(label="What gender do you identify as?",
@@ -94,7 +94,7 @@ options=(
             "Postgraduate or professional degree, including masters, doctorate, medical or law degree (e.g., MA, MS, PhD, MD, JD) - You really like school huh?",))
 
 
-st.text('Small interactive info chart before prediction.')
+st.text('This chart is interactive and part of my prediction derives from this dataset, play around with it.')
 chart = alt.Chart(ss).mark_circle().encode(
 x="age",
 y="income",
@@ -183,7 +183,7 @@ if st.button('Click here!'):
     st.info(f"The probability that you use LinkedIn is: {round (probs[0][1], 2)}")
 
 st.subheader("So, did I win the bet?!")
-st.text('Let me know what you think, email me at ama502@georgetown.edu!')
+st.text('The prediction app uses a machine learning algorithm built harnessing data from The Pew social media survey. Let me know what you think, email me at ama502@georgetown.edu!')
 st.text('Thank you for playing!')
 
 st.image('viz.png', caption='I did it! | Architect: AAhmed')
